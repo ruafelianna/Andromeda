@@ -13,12 +13,10 @@
   </PropertyGroup>
 
   <PropertyGroup Label="BuildProperties">
-  <RootFolder>$(MSBuildThisFileDirectory)</RootFolder>
-  <BaseOutputPath>$(MSBuildThisFileDirectory)Build\$(MSBuildProjectName)\</BaseOutputPath>
-  <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)Obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <RootFolder>$(MSBuildThisFileDirectory)</RootFolder>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)Build\$(MSBuildProjectName)\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)Obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  <PackageOutputPath>$(MSBuildThisFileDirectory)Packages\</PackageOutputPath>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)Packages\</PackageOutputPath>
   </PropertyGroup>
-
-  <Import Project="Packages.Build.props"/>
 </Project>
