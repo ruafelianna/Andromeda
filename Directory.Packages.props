@@ -2,25 +2,42 @@
   <PropertyGroup Label="PackageManagement">
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
-
   <PropertyGroup Label="Versions">
-    <Version_Avalonia>11.1.3</Version_Avalonia>
+    <Version_Avalonia>11.1.4</Version_Avalonia>
+    <Version_Microsoft>8.0.1</Version_Microsoft>
+    <Version_Microsoft_EFCore>8.0.10</Version_Microsoft_EFCore>
     <Version_ReactiveUI>20.1.63</Version_ReactiveUI>
   </PropertyGroup>
-
   <ItemGroup>
+    <PackageVersion Include="Andromeda.Localization" Version="1.0.0-rc" />
     <PackageVersion Include="Avalonia" Version="$(Version_Avalonia)" />
-    <PackageVersion Include="Avalonia.ReactiveUI" Version="$(Version_Avalonia)" />
     <PackageVersion Include="Avalonia.Controls.TreeDataGrid" Version="11.0.10" />
+    <PackageVersion Include="Avalonia.Desktop" Version="$(Version_Avalonia)" />
+    <PackageVersion Include="Avalonia.Diagnostics" Version="$(Version_Avalonia)" />
+    <PackageVersion Include="Avalonia.Fonts.Inter" Version="$(Version_Avalonia)" />
+    <PackageVersion Include="Avalonia.ReactiveUI" Version="$(Version_Avalonia)" />
+    <PackageVersion Include="Avalonia.Themes.Fluent" Version="$(Version_Avalonia)" />
+    <PackageVersion Include="BaGet.Protocol" Version="0.4.0-preview2" />
     <PackageVersion Include="IsExternalInit" Version="1.0.3" />
+    <PackageVersion Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.10.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(Version_Microsoft_EFCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(Version_Microsoft_EFCore)" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="$(Version_Microsoft)" />
+    <PackageVersion Include="ReactiveMarbles.ObservableEvents.SourceGenerator" Version="1.3.1" />
     <PackageVersion Include="ReactiveUI" Version="$(Version_ReactiveUI)" />
     <PackageVersion Include="ReactiveUI.Fody" Version="19.5.41" />
-    <PackageVersion Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
+    <PackageVersion Include="ReactiveUI.Validation" Version="4.1.1" />
+    <PackageVersion Include="System.Configuration.ConfigurationManager" Version="$(Version_Microsoft)" />
+    <PackageVersion Include="System.IO.Ports" Version="8.0.0" />
     <PackageVersion Include="Tommy" Version="3.1.2" />
   </ItemGroup>
-
   <ItemGroup>
+    <PackageVersion Include="Andromeda.Checksums" Version="$(PackageVersion)" />
+    <PackageVersion Include="Andromeda.Collections" Version="$(PackageVersion)" />
+    <PackageVersion Include="Andromeda.Components.Forms.SourceGenerators" Version="$(PackageVersion)" />
+    <PackageVersion Include="Andromeda.Concurrent" Version="$(PackageVersion)" />
+    <PackageVersion Include="Andromeda.CSharp" Version="$(PackageVersion)" />
     <PackageVersion Include="Andromeda.CSharp.Consts" Version="$(PackageVersion)" />
     <PackageVersion Include="Andromeda.Localization.SourceGenerators" Version="$(PackageVersion)" />
     <PackageVersion Include="Andromeda.SourceGenerators.Enum" Version="$(PackageVersion)" />

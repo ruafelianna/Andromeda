@@ -18,5 +18,7 @@
     <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)Obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageOutputPath>$(MSBuildThisFileDirectory)Packages\</PackageOutputPath>
+    <PublishDir>$(MSBuildThisFileDirectory)Publish\$(MSBuildProjectName)\</PublishDir>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
 </Project>

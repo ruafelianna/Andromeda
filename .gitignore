@@ -9,3 +9,6 @@ NuGet/*
 
 Packages/*
 !Packages/.keep
+
+Publish/*
+!Publish/.keep
